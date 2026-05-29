@@ -1,12 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #111;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+}
+
 .card {
-    background: #ffeb3b; /* amarillo tipo “warning/neutral” */
+    background: #ffeb3b;
+    color: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     padding: 16px;
     border-radius: 12px;
-    max-width: 400px;
+
+    margin-bottom: 16px;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.app-info {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    color: #111;
+    align-items: center;
+    gap: 16px;
+}
+
+.app-info img {
+    width: 100px;
+    height: 100px;
+}
+
+.app-info h2 {
+    font-size: 40px; /* proporcional al icono */
+    margin: 0;
+    line-height: 100px;
 }
 
 .app-header {
@@ -27,13 +71,19 @@
 }
 
 .download-btn {
-    background: #111;
+    background: #1e1e1e;
     color: white;
+
     text-decoration: none;
-    padding: 10px 14px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
+
+    padding: 16px 24px;
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .download-btn:hover {
