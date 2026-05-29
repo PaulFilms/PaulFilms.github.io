@@ -1,0 +1,41 @@
+.card {
+    background: #ffeb3b; /* amarillo tipo “warning/neutral” */
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #111;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-header img {
+    width: 48px;
+    height: 48px;
+}
+
+.app-header h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 48px; /* mismo alto que el icono */
+}
+
+.download-btn {
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #333;
+}
